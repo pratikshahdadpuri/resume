@@ -1,0 +1,316 @@
+*{
+    padding:0px;
+    scroll-behavior: smooth;
+    margin: 0%;
+}
+.nav{
+    position: fixed;
+    display:flex;
+    flex-direction: row;
+    background-color: rgb(124, 124, 124);
+    justify-content:space-around;
+    padding : 1rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+    z-index: 1;
+    width: 100%;
+    flex-shrink: 1;
+}
+a{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 1em;
+    flex-shrink: 2;
+
+}
+a:hover{
+    text-decoration: underline;
+}
+#logo{
+    width: 7rem;
+}
+.home{
+    background-image: url("bacgroun1.jpg");
+    background-size:cover;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    justify-items: center;
+    flex-wrap: wrap;
+    height: 40rem;
+    /* padding-top: 8rem;
+    padding-bottom: 8rem; */
+
+    
+}
+#picture{
+    align-self:center;
+    width:8rem;
+    border-radius: 50%;
+    border: 3px solid white;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    top: 5%;
+   
+}
+#name{
+    word-wrap: break-word;
+    align-self:center;
+    color: aliceblue;
+    font-family:'Press Start 2P';
+    font-size: 0.9em;
+    padding: 1em;
+}
+#pratikprofile{
+    word-wrap: break-word;
+    align-self:center;
+    color: aliceblue;
+    font-family:'Press Start 2P';
+    font-size: 0.7em;
+    padding: 1em;
+}   
+.skills{
+     background-image: url("dogo.jpg");
+     background-size: cover;
+     display: flex;
+     flex-direction: row;
+     height: 40rem;
+     justify-content: space-evenly;
+     align-items: center;
+     width: 100%;
+     flex-shrink: 1;
+     flex-wrap: wrap;
+}
+.box1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(5px);
+    border: 2px solid rgb(165, 130, 130);
+    border-radius: 10%;
+    height: 8em;
+    width: 8em; 
+    padding: 1em;
+    flex-shrink: 2;
+    
+    
+}
+.box2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(5px);
+    border: 2px solid rgb(165, 130, 130);
+    border-radius: 10%;
+    height: 8em;
+    width: 8em; 
+    padding: 1em;
+    flex-shrink: 2;
+    
+}
+.box3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(5px);
+    border: 2px solid rgb(165, 130, 130);
+    border-radius: 10%;
+    height: 8em;
+    width: 8em; 
+    padding: 1em;
+    flex-shrink: 2;
+    
+}
+.box4{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(5px);
+    border: 2px solid rgb(165, 130, 130);
+    border-radius: 10%;
+    height: 8em;
+    width: 8em; 
+    padding: 1em;
+    flex-shrink: 2;
+    
+}
+#list1{
+    font-size: 1em;
+    color: aliceblue;
+    font-family:'Press Start 2P';
+    align-self: center;
+}
+
+#html{
+    width: 6em;
+    
+}
+#css{
+    width: 6em;
+    
+}
+#js{
+    width: 6em;
+    ;
+}
+#python{
+    width: 6em;
+    
+}
+#htmltxt{
+    font-family:'Press Start 2P';
+    padding-top: 1em;
+    color: rgb(0, 0, 0);
+}
+#csstxt{
+    font-family:'Press Start 2P';
+    padding-top: 1em;
+    color: rgb(255, 255, 255);
+}
+#jstxt{
+    padding-top: 1em;
+    font-family:'Press Start 2P';
+    color: rgb(255, 255, 255);
+}
+#pythontxt{
+    font-family:'Press Start 2P';
+    padding-top: 1em;
+    color: rgb(0, 0, 0);
+}
+.about{
+    height: 28rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url("about\ us.jpg");
+    background-size: cover;
+
+}
+.box5{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(5px);
+    border: 2px solid rgb(165, 130, 130);
+    border-radius: 5%;
+    height: 20em;
+    width: 80%;
+    padding: 1em;
+    flex-shrink: 2;
+    -webkit-border-radius: 5%;
+    -moz-border-radius: 5%;
+    -ms-border-radius: 5%;
+    -o-border-radius: 5%;
+}
+#me{
+    padding-top: 1em;
+    font-family:'Press Start 2P';
+    color: rgb(255, 255, 255);
+}
+.contact{
+    background-image: url("real\ contact.jpg");
+     background-size: cover;
+     background-position: 0.1rem;
+     display: flex;
+     flex-direction: row;
+     height: 35rem;
+     justify-content: space-evenly;
+     align-items: center;
+     width: 100%;
+     flex-shrink: 1;
+     flex-wrap: wrap;
+}
+.link1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(5px);
+    border: 2px solid rgb(165, 130, 130);
+    border-radius: 10%;
+    height: 8em;
+    width: 8em; 
+    padding: 1em;
+    flex-shrink: 2;
+    
+    
+}
+.link2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(5px);
+    border: 2px solid rgb(165, 130, 130);
+    border-radius: 10%;
+    height: 8em;
+    width: 8em; 
+    padding: 1em;
+    flex-shrink: 2;
+    
+}
+.link3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(5px);
+    border: 2px solid rgb(165, 130, 130);
+    border-radius: 10%;
+    height: 8em;
+    width: 8em; 
+    padding: 1em;
+    flex-shrink: 2;
+    
+}
+
+
+
+#linkedin{
+    width: 5em;
+}
+#github{
+    width: 5em;
+}
+#gmail{
+    width:7em;
+}
+footer{
+    background-color:rgb(124, 124, 124) ;
+}
+.ft-main{
+    padding: 1.25rem 1.875rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.ft-main-item{
+    padding: 1.25rem;
+  min-width: 12.5rem;
+}
+.ft-title{
+    color: #fff;
+  font-family: "Merriweather", serif;
+  font-size: 1.375rem;
+  padding-bottom: 0.625rem;
+}
+ul{
+    list-style: none;
+    align-self: flex-end;
+}
+.ftpara{
+    padding: 1.25rem;
+    min-width: 12.5rem;
+    align-self: left;
+}

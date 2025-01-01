@@ -12,7 +12,7 @@
 <body>
     <header class="webnav">
         <div class="nav">
-            <div class="logo"><img src="pratik logo w1.png" id="logo">
+            <div class="logo"><p>Pratik Shahdadpuri</p>
             </div>
             <div class="navlink">
                 <a href="#home">home</a>
@@ -26,9 +26,12 @@
     </header>
     <section>
         <div class="home" id="home">
-            <img src="pratikspurilk.png" alt="photo" id="picture">
+            <canvas id="matrix">
+            
+            </canvas>
+            <img src="pratik2.png" alt="photo" id="picture">
             <p id="name">Pratik Rakesh Shahdadpuri</p>
-            <p id="pratikprofile"> Front-End Web dev<>
+            <p id="pratikprofile"> FullStack Web dev<>
             </p>
 
         </div>
@@ -46,39 +49,87 @@
                 <p id="jstxt">JAVASCRPIT</p>
             </div>
             <div class="box4">
-                <img src="python.png" alt="" id="python">
-                <p id="pythontxt">PYTHON (BASICS)</p>
+                <img src="php.png" alt="" id="php">
+                <p id="phptxt">php</p>
             </div>
+            <div class="box5">
+                <img src="laravel.995x1024.png" alt="" id="laravel">
+                <p id="laraveltxt">Laravel (BASICS)</p>
+            </div>
+            <div class="box5">
+                <img src="sql-server.png" alt="" id="sql">
+                <p id="sqltxt">SQL (BASICS)</p>
+            </div>
+            
         </div>
         <div class="about" id="about">
-            <div class="box5">
-                <p id="me">Passionate about coding with a penchant for quickly
+            <div class="h"><h1>About me</h1></div>
+            <!-- <div class="box5"> -->
+                <!-- <p id="me">Passionate about coding with a penchant for quickly
                     grasping new programming languages. While
                     problem-solving might not be my strongest suit, my
                     strength lies in adaptability and keen observation skills.
                     Eager to apply my coding expertise and swift learning
-                    abilities to new challenges</p>
+                    abilities to new challenges</p> -->
+                    <div class="gallery">
+                        <div class="gallery-item">
+                            <img src="1.png" alt="Image 1">
+                            <div class="overlay">
+                                <h1>Graduated From Parul University</h1>
+                                <p>B-TECH</p>
+                                <p>2021 to 2024</p>
+                            </div>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="2.png" alt="Image 2">
+                            <div class="overlay">
+                                <h1>Cloud Computing Intern</h1>
+                                <p>Eduversity</p>
+                                <p>Jan 2024 to March 2024</p>
+                            </div>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="3.png" alt="Image 3">
+                            <div class="overlay">
+                                <h1>FullStack Intern</h1>
+                                <p>BitInfotech</p>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
             </div>
         </div>
-        <div class="contact" id="contact">
-            <!-- <h1 id="heading4">Contact Me</h1> -->
-            <div class="link1">
-                <a href="https://www.linkedin.com/in/pratik-shahdadpuri-b0a203178/"><img src="linkedinwhite.png"
-                        alt="linkedin" id="linkedin"></a>
-            </div>
-            <div class="link2">
-                <a href="mailto:pratikshahdadpuri0912@gmail.com"><img src="gmail white.png" alt="gmail" id="gmail"></a>
-            </div>
-            <div class="link3">
-                <a href="https://github.com/pratikshahdadpuri"><img src="github.png" alt="github" id="github"></a>
-            </div>
-
-
-        </div>
+        
     </section>
     <footer>
+        <div class="footer">
+            <div class="flinks">
+                <h2 id="ftlinks">Links</h2>
+                <a href="">Linkedin</a>
+                <a href="">Gmail</a>
+                <a href="">Github</a>
+                <a href="">Naukri</a>
 
+            </div>
+            <div class="form">
+                <h2>Contact Me</h2>
+                <form action="" id="contact">
+                    <input type="text" name="name" placeholder="Name" class="formitem" id="name">
+                    <input type="email" name="email" placeholder="Email" class="formitem" id="email">
+                    <input type="text" name="phone" placeholder="Phone" class="formitem" id="phone">
+                    <textarea name="message" placeholder="Message" class="formitem" id="message"></textarea>
+                    <div></div>
+                    <button type="submit" class="formitem">Submit</button>
+                </form>
+            </div>
+        </div>
+        <div class="copy">
+            <p> &#169; All copyright Reserved by Pratik Shahdadpuri</p>
+        </div>
     </footer>
+    <script src="./js/matrix.js"></script>
+    
+   
 </body>
 
 </html>

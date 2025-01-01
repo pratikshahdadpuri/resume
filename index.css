@@ -8,7 +8,7 @@
     position: fixed;
     display: flex;
     flex-direction: row;
-    background-color: rgb(124, 124, 124);
+    background-color: #EDEEEB;
     justify-content:space-between;
     padding: 1rem;
     flex-wrap: wrap;
@@ -16,13 +16,14 @@
     z-index: 1;
     width: 100%;
     flex-shrink: 1;
+    /* box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px; */
 }
 
-a {
+.nav a {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 700;
     text-decoration: none;
-    color: aliceblue;
+    color: #0274BD;
     font-size: 1em;
     flex-shrink: 2;
     padding: 2vh;
@@ -37,28 +38,46 @@ a:hover {
 #logo {
     width: 7rem;
     padding-left: 4px;
+    
 }
 .logo{
    justify-content: center; 
+   color: #0274BD;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   font-weight: 700;
 }
 .navlink{
     justify-content: space-between;
     padding-right: 4vh; 
 }
+.navlink :hover{
+    background-color: #0274BD;
+    color: #EDEEEB;
+    text-decoration: none;
+}
 
 .home {
-    background-image: url("bacgroun1.jpg");
+    /* background-image: url("bacgroun1.jpg"); */
+    /* background-color: #31393C; */
     background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: center;
     justify-items: center;
     flex-wrap: wrap;
-    height: 40rem;
+    height: 95vh;
     /* padding-top: 8rem;
     padding-bottom: 8rem; */
 
 
+}
+#matrix {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2; /* Keep the canvas in the background */
 }
 
 #picture {
@@ -71,25 +90,43 @@ a:hover {
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
     top: 5%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    
 
 }
 
 #name {
     word-wrap: break-word;
     align-self: center;
-    color: aliceblue;
+    color: rgb(255, 255, 255);
     font-family: 'Press Start 2P';
     font-size: 0.9em;
     padding: 1em;
+    overflow: hidden;
+    border-right: .15em solid rgb(245, 245, 245);
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .15em;
+    animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
 }
-
+@keyframes typing {
+    from { width: 0 }
+    to { width: 25% }
+  }
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: rgb(255, 255, 255); }
+  }
 #pratikprofile {
     word-wrap: break-word;
     align-self: center;
-    color: aliceblue;
+    color: rgb(255, 255, 255);
     font-family: 'Press Start 2P';
     font-size: 0.7em;
     padding: 1em;
+    
 }
 
 .skills {
@@ -97,10 +134,10 @@ a:hover {
     background-size: cover;
     display: flex;
     flex-direction: row;
-    height: 40rem;
+    height: 44rem;
     justify-content: space-evenly;
     align-items: center;
-    width: 100%;
+    width:100%;
     flex-shrink: 1;
     flex-wrap: wrap;
 }
@@ -165,6 +202,34 @@ a:hover {
     flex-shrink: 2;
 
 }
+.box5 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(5px);
+    border: 2px solid rgb(165, 130, 130);
+    border-radius: 10%;
+    height: 8em;
+    width: 8em;
+    padding: 1em;
+    flex-shrink: 2;
+
+}
+.box6 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(5px);
+    border: 2px solid rgb(165, 130, 130);
+    border-radius: 10%;
+    height: 8em;
+    width: 8em;
+    padding: 1em;
+    flex-shrink: 2;
+
+}
 
 #list1 {
     font-size: 1em;
@@ -188,7 +253,15 @@ a:hover {
     ;
 }
 
-#python {
+#php {
+    width: 6em;
+
+}
+#laravel {
+    width: 6em;
+
+}
+#sql {
     width: 6em;
 
 }
@@ -202,7 +275,7 @@ a:hover {
 #csstxt {
     font-family: 'Press Start 2P';
     padding-top: 1em;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
 }
 
 #jstxt {
@@ -211,45 +284,42 @@ a:hover {
     color: rgb(255, 255, 255);
 }
 
-#pythontxt {
+#phptxt{
+    font-family: 'Press Start 2P';
+    padding-top: 1em;
+    color: rgb(225, 225, 225);
+}
+#laraveltxt{
     font-family: 'Press Start 2P';
     padding-top: 1em;
     color: rgb(0, 0, 0);
+    text-align: center;
 }
+#sqltxt{
+    font-family: 'Press Start 2P';
+    padding-top: 1em;
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
 
 .about {
-    height: 28rem;
+    height: 95vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-image: url("about\ us.jpg");
+    /* background-image: url("about\ us.jpg"); */
     background-size: cover;
+    background-color: #EDEEEB;
+    padding-top: 1%;
 
-}
-
-.box5 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    backdrop-filter: blur(5px);
-    border: 2px solid rgb(165, 130, 130);
-    border-radius: 5%;
-    height: 20em;
-    width: 80%;
-    padding: 1em;
-    flex-shrink: 2;
-    -webkit-border-radius: 5%;
-    -moz-border-radius: 5%;
-    -ms-border-radius: 5%;
-    -o-border-radius: 5%;
 }
 
 #me {
     padding-top: 1em;
     font-family: 'Press Start 2P';
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
 }
 
 .contact {
@@ -326,38 +396,238 @@ a:hover {
     width: 7em;
 }
 
-footer {
-    background-color: rgb(124, 124, 124);
+
+.h{
+    display: flex;
+    justify-content: center;
+    color: #0274BD ;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-top: 2.5em;
+    padding-bottom: 2.5em;
+    
+}
+.gallery{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+.gallery-item img {
+    width: 100%;
+    height:90%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+/* Overlay Effect */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    height: 95%;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.ft-main {
-    padding: 1.25rem 1.875rem;
+/* Hover Effects */
+.gallery-item:hover img {
+    transform: scale(1.1);
+}
+
+.gallery-item:hover .overlay {
+    opacity: 1;
+}
+.footer{
+    background-color: #3E96F4;
+    height: 50vh;
     display: flex;
-    flex-wrap: wrap;
     flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 5%;
+    padding-bottom: 3%;
+}
+.copy{
+    background-color: #3175be;
+    height: 5vh;
+}
+.flinks{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+    
+}
+.flinks a{
+    font-size: larger;
+    color: #EDEEEB;
+    text-decoration: none;
+    text-align: center;
+    padding: 5%;
+    text-align: justify;
+}
+#contact{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     justify-content: center;
     align-items: center;
 }
-
-.ft-main-item {
-    padding: 1.25rem;
-    min-width: 12.5rem;
+.formitem{
+    margin: 5%;
 }
-
-.ft-title {
-    color: #fff;
-    font-family: "Merriweather", serif;
-    font-size: 1.375rem;
-    padding-bottom: 0.625rem;
+#contact input{
+    width: 20em;
+    height: 2em;
+    border-radius: 5px;
+    border: transparent;
+    padding:3px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-
-ul {
-    list-style: none;
-    align-self: flex-end;
+#contact textarea{
+    width: 20em;
+    height: 7em;
+    border-radius: 5px;
+    border: transparent;
+    padding:3px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+#contact button{
+    background-color: #EDEEEB;
+    border-radius: 5px;
+    width: 6em;
+    height: 3em;
+    align-self: center;
+    border: transparent;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
-.ftpara {
-    padding: 1.25rem;
-    min-width: 12.5rem;
-    align-self: left;
+}
+.form h2{
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #EDEEEB;
+}
+.flinks h2{
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #EDEEEB;
+}
+.copy{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.copy p{
+    color: #EDEEEB;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: small;
+}
+.my-button {
+    background-color: transparent;
+    border: 10px;
+    color: black;
+    cursor: pointer;
+    font-size: 30px;
+    margin-left: 32px;
+    float: left;
+    line-height: 70px;
+    display: none;
+  }
+  
+  .my-button:focus {
+    outline: none;
+  }
+@media only screen and (max-width: 500px) {
+    .gallery{
+        flex-direction: column;
+        height: 90%;
+    }
+    #name {
+        
+        font-size: 0.7em;
+    }
+    #pratikprofile {
+        font-size: 0.5em;
+        padding: 0.6em;
+        
+    }
+    .about {
+        height: 120vh;
+        padding-bottom: 5%;
+    
+    }
+    
+    .form h2{
+        padding-top: 20vh;
+    }
+ .form #contact{
+    height: fit-content;
+ }
+}
+@media only screen and (max-width: 900px) {
+    .form{
+        height: 60vh;
+    }
+    #contact{
+        height: 50vh;
+        justify-content: left;
+    }
+    #contact input{
+        width: 15em;
+        height: 1em;
+        border-radius: 2px;
+        border: transparent;
+        padding:3px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size:x-small;
+    }
+    #contact textarea{
+        width: 11.5em;
+        height: 4em;
+        border-radius: 5px;
+        border: transparent;
+        padding:3px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    #contact button{
+        background-color: #EDEEEB;
+        border-radius: 5px;
+        width: 4em;
+        height: 1.5em;
+        align-self: center;
+        border: transparent;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: x-small;
+    }
+    .form h2{
+        text-align: center;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: #EDEEEB;
+        font-size: medium;
+    }
+    
+    .formitem{
+        margin: 4%;
+    }
+}
+@media only screen and (max-width: 400px) {
+    .form h2{
+        padding-top: 20vh;
+    }
 }
